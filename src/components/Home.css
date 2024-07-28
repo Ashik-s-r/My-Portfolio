@@ -1,0 +1,103 @@
+.featured-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  /* background-color: rgba(255, 255, 255, 0.8); Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Blur the background behind the box */
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.featured-text {
+  text-align: center;
+  padding: 20px; /* Padding for inner content */
+  color: #000;
+}
+
+.featured-image .profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow to the image */
+}
+
+.featured-image:hover .profile {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.hello {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 10px; /* Space below the greeting */
+}
+
+.featured-name h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  color: #f2f5f7;
+}
+
+.text-info {
+  font-size: 1.1rem;
+  color: #495057;
+  margin: 20px 0;
+  line-height: 1.6; /* Increase line spacing for readability */
+}
+
+.text-btn .btn {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease; /* Smooth transition for button colors */
+}
+
+.text-btn .btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.text-btn .btn-success:hover {
+  background-color: #218838; /* Darken the green button on hover */
+}
+
+.text-btn .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.text-btn .btn-primary:hover {
+  background-color: #0069d9; /* Darken the blue button on hover */
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #495057;
+  margin: 0 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+  transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+.background-image-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  opacity: 0.3; /* Adjust opacity for a subtle background image */
+}
